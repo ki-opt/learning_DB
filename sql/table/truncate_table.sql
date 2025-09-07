@@ -1,0 +1,1 @@
+truncate table t_store_weekly_sales;
