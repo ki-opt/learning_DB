@@ -1,0 +1,5 @@
+local or global index
+https://it.goodways.co.jp/oracle/database/2025/06/09/Introduction-and-Recommendation-of-ORACLE-Database-Indexes.html
+
+dbの統計情報更新
+exec dbms_stats.gather_table_stats('rtkdm708','t_store_weekly_sales');
