@@ -1,5 +1,5 @@
+/* temp_table */
 drop table temp_table;
-
 --insert
 create global temporary table temp_table (
 	store_cd varchar2(6),
@@ -21,5 +21,13 @@ where 1 = 1
   and store_cd in ('676584','265381')
 group by store_cd, jan_cd;
 
-select count(*)
-from temp_table;
+
+/* m_store */
+create table m_store (
+	store_cd varchar2(6)
+);
+
+insert into m_store
+select store_cd
+from t_store_weekly_sales
+group by store_cd;
