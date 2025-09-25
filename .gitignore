@@ -3,3 +3,7 @@ week_id_*.csv
 *.ods
 *.txt
 *.lnk
+
+connection
+tablespace.sql
+privilage.sql
